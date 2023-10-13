@@ -47,11 +47,6 @@ public class VerifyCheckoutAndConyinueShoopingTestng extends Browser {
 			driver.get("https://www.saucedemo.com/v1/");
 		}
 		
-		if(browserName.equals("Firefox"))
-		{
-			driver = launchFirefox();
-			driver.get("https://www.saucedemo.com/v1/");
-		}
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(50000));
 //		if(browserName.equals("chrome"))
 //		{
