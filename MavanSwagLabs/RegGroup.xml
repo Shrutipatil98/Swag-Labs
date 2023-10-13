@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  <run>
+			  <include name="Sanity"></include>
+			  <include name="High Priority"></include>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="testPack.VerifyCheckoutAndConyinueShoopingTestng"/>
+      <class name="testPack.VerifyLoginTestng"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="ChromeTest">
+	  <classes>
+		  <class name="testPack.VerifyCheckoutAndConyinueShoopingTestng"/>
+		  <class name="testPack.VerifyLoginTestng"/>
+	  </classes>
+  </test>
+  
+  <test name="FirefoxTest">
+	  <classes>
+		  <class name="testPack.VerifyCheckoutAndConyinueShoopingTestng"/>
+		  <class name="testPack.VerifyLoginTestng"/>
+	  </classes>
+  </test>
+</suite> <!-- Suite -->
