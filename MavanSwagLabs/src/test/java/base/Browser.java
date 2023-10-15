@@ -20,7 +20,7 @@ public class Browser {
 		
        public static WebDriver launchFirefox() {
 		
-		System.setProperty("webdriver.gecko.driver", "src\\\\test\\\\resources\\\\BrowserFiles\\geckodriver.exe");
+		System.setProperty("webdriver.gecko123.driver", "src\\\\test\\\\resources\\\\BrowserFiles\\geckodriver.exe");
 //		ChromeOptions options = new ChromeOptions();
 //		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new FirefoxDriver();

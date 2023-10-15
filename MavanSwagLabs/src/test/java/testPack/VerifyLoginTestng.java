@@ -48,6 +48,12 @@ public class VerifyLoginTestng extends Browser{
 			driver = launchFirefox();
 			driver.get("https://www.saucedemo.com/v1/");
 		}
+
+		if(browserName.equals("Safari"))
+		{
+			driver = launchSafari();
+			driver.get("https://www.saucedemo.com/v1/");
+		}
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(50000));
 //		if(browserName.equals("chrome"))
 //		{
